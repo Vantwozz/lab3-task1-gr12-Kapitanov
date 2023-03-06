@@ -27,6 +27,12 @@ void main (void)
     if (noSwap == 1)
         break;
   }
+  printf("Sorted array:\n");
+  for (int i = 0; i < N; i++)
+    printf("%d ", array[i]);
+  printf("\n");
+  free(array);
+  return 0;
 }
 
 int numOfBits(int num){
