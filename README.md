@@ -1,8 +1,14 @@
-# labrabota2-gr12-Vantwozz
-### https://github.com/Vantwozz/lab2-intro-markdown.git
+# Overview
 
-### https://github.com/Vantwozz/lab2-intro-git.git
-Отчет:
-### https://docs.google.com/document/d/1B-tQsdFRXi74wgVq3JcFUxTOoPP4hFX6I27TNXKAl60/edit?usp=sharing
+It is public template of assignment `"labrabota 3"` for FPMI students
+Kapitanov
 
-# :)
+# Usage
+
+Please, edit README and add some details, as instance **{add your last name, first name and group number}**.
+Ivan
+
+# Building
+
+Please, import repository and use for repl.it project, which is defined in the assignment "labrabota 3".
+12 Group
