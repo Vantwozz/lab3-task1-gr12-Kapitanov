@@ -3,8 +3,15 @@
 
 void main (void)
 {
-	printf ("Hello World\n");
-	printf ("Goodbye World\n");
+  int n;
+  scanf("%d", &n);
+  array = (int*)malloc(n*sizeof(int));
+  for(int i = 0; i<n; i++){
+    int num;
+    printf("Enter %d number in array",n);
+    scanf("%d", &num);
+    array[i] = num;
+  }
 }
 
 int numOfBits(int num){
