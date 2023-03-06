@@ -1,26 +1,29 @@
 /* hello.c */
 #include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
 
 void main (void)
 {
   int n;
+  int* array;
   scanf("%d", &n);
   array = (int*)malloc(n*sizeof(int));
   for(int i = 0; i<n; i++){
     int num;
-    printf("Enter %d number in array",n);
+    printf("Enter %d number in array: ",i+1);
     scanf("%d", &num);
     array[i] = num;
   }
   int tmp;
   bool noSwap;
-  for (int i = N - 1; i >= 0; i--){
+  for (int i = n - 1; i >= 0; i--){
     noSwap = 1;
     for (int j = 0; j < i; j++){
         if (numOfBits(array[j]) > numOfBits(array[j + 1])){
-            tmp = mass[j];
-            mass[j] = mass[j + 1];
-            mass[j + 1] = tmp;
+            tmp = array[j];
+            array[j] = array[j + 1];
+            array[j + 1] = tmp;
             noSwap = 0;
         }
     }
@@ -28,7 +31,7 @@ void main (void)
         break;
   }
   printf("Sorted array:\n");
-  for (int i = 0; i < N; i++)
+  for (int i = 0; i < n; i++)
     printf("%d ", array[i]);
   printf("\n");
   free(array);
