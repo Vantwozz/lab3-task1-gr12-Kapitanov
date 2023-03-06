@@ -12,6 +12,21 @@ void main (void)
     scanf("%d", &num);
     array[i] = num;
   }
+  int tmp;
+  bool noSwap;
+  for (int i = N - 1; i >= 0; i--){
+    noSwap = 1;
+    for (int j = 0; j < i; j++){
+        if (numOfBits(array[j]) > numOfBits(array[j + 1])){
+            tmp = mass[j];
+            mass[j] = mass[j + 1];
+            mass[j + 1] = tmp;
+            noSwap = 0;
+        }
+    }
+    if (noSwap == 1)
+        break;
+  }
 }
 
 int numOfBits(int num){
